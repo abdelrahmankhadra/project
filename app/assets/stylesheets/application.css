@@ -13,3 +13,28 @@
  *= require_tree .
  *= require_self
  */
+ /**** navbar css ****/
+ .navbar{
+   z-index:100;
+ }
+ .projectName {
+   text-transform:uppercase;
+ }
+ .projectName a {
+   color:white;
+ }
+ .projectName a img{
+ 	width:30px;
+ 	height:30px;
+ }
+
+
+ /**** footer css ****/
+ .bg-4 {
+   background-color:#2f2f2f;
+   color:#ffffff;
+ }
+ .bg-4 .copyright{
+   margin-top:10px;
+   margin-bottom:10px;
+ }

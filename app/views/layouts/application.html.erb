@@ -2,25 +2,58 @@
 <html>
   <head>
     <title>Program</title>
-    <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= csrf_meta_tags %>
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
+    <!-- ****** N A V  B A R****** -->
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="projectName">
+              <a class="navbar-brand" href="#">
+                <%= image_tag("abood.png", class: "logo") %>
+              </a>
+              <a class="projectName navbar-brand" href="#">Abdelrahman Khadra</a>
+            </div> <!--end projectName -->
+          </div> <!--end navbar-header -->
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav nav navbar-nav navbar-right">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Work</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div> <!--end navbar collapse-->
+        </div><!-- end nav container-->
+      </nav><!-- end navbar-->
 
     <%= yield %>
 
-    <footer>
-      &copy; 2017 Bike Berlin
-    </footer>
+    <!-- ****** F O O T E R ****** -->
+<footer class="navbar-fixed-bottom bg-4 text-center">
+
+  <div class="container-fluid copyright">
+    &copy; 2017 AbdelrahmanKhadra
+  </div><!-- end copyright -->
+
+</footer><!-- end footer bg-4 -->
   </body>
 </html>
