@@ -28,11 +28,15 @@
  	height:30px;
  }
 
-
  /**** footer css ****/
  .bg-4 {
    background-color:#2f2f2f;
    color:#ffffff;
+   clear: both;
+   position: relative;
+   z-index: 10;
+   height: 6em;
+
  }
  .bg-4 .copyright{
    margin-top:10px;

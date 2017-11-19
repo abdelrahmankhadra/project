@@ -1,13 +1,74 @@
-<h1>Contact</h1>
-<h3>Email</h3>
-<p>
-  aboodkhadra7@gmail.com
-</p>
-<h3>Mobile</h3>
-<p>
-  +972 598381018
-</p>
-<h3>Address</h3>
-<p>
-  Gaza - Al-Galaa Street - near the Engineers Syndicate
-</p>
+<!-- ****** C o n t a c t ****** -->
+<div class="container" id="contact">
+  <div class="container col-lg-4 col-md-4" align="center">
+    <div id="map"></div>
+    <div class="group">
+      <div class="first">
+        <h1 class="contact-h1">
+          <strong>contact</strong>
+        </h1>
+      </div>
+      <!-- end header -->
+    </div>
+    <!-- end container -->
+
+    <div class="contactInformation">
+      <p>
+        <a href="mailto:aboodkhadra7@gmail.com">
+          <span class="glyphicon glyphicon-envelope"></span>
+          aboodkhadra7@gmail.com
+        </a>
+      </p>
+      <p>
+        <a href="tel:+972598381018">
+          <span class="glyphicon glyphicon-phone"></span>
+          +972598381018
+        </a>
+      </p>
+      <p>
+        <a href="#">
+          <span class="glyphicon glyphicon-home"></span>
+          Gaza - Al-Galaa Street - near the Engineers Syndicate
+        </a>
+      </p>
+    </div>
+    <!-- end about -->
+  </div>
+  <!-- end container -->
+
+  <div class="container col-lg-8 col-md-8">
+    <h1 class="say">
+      <strong>Say hello</strong>
+    </h1>
+    <form name="login">
+      <div class="form-group col-lg-6 col-md-6">
+        <label for="Name">your Name</label>
+        <input type="text" id="name" class="name" placeholder="Enter your name" title="Enter your name" required="required">
+        <p id="visible-name" style="background-color: black; margin: 10px"></p>
+      </div>
+      <div class="form-group col-lg-6 col-md-6">
+        <label for="phones">phone Number</label>
+        <input type="tel" id="tel" name="tel" placeholder="+972 598 381018" title="Your phone Number here" minlength="13">
+        <p id="visible-tel" style="background-color: black; margin: 10px"></p>
+      </div>
+      <div class="form-group">
+        <label for="Email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="Your email address here" title="Your email address here" required="required">
+        <p id="visible-email" style="background-color: black; margin: 10px"></p>
+      </div>
+      <div class="form-group">
+        <label for="subject">your message below</label>
+        <textarea id="subject" class="message-box" name="subject" placeholder="place your message here" title="place your message here" style="color: black" required="required"></textarea>
+
+        <p id="visible-comment" style="background-color: black; margin: 10px"></p>
+      </div>
+      <h3 id="char-count" style="color: black;background-color: #fff"></h3>
+
+      <button type="submit" id="btnSubmit" class="btn btn-default">Submit</button>
+
+    </form>
+    <!-- end form -->
+  </div>
+  <!-- end container -->
+</div>
+<!-- end container -->

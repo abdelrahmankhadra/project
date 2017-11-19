@@ -14,3 +14,40 @@
 //= require turbolinks
 //= require jquery3
 //= require_tree .
+// Twitter
+// work section
+
+$(document).ready(function(){
+  // Smooth scrolling
+  var $root = $('html, body');
+
+  $('.navbar-nav a').click(function() {
+    var href = $.attr(this, 'href');
+
+    if (href != undefined && href != '#') {
+      $root.animate({
+        scrollTop: $(href).offset().top
+      }, 500, function () {
+        window.location.hash = href;
+      });
+    }
+
+    return false;
+  });
+
+
+  // Tooltips
+  $(function () {
+    $("#item1").tooltip();
+  });
+
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+
+  $(function () {
+    $("#item2").tooltip();
+  });
+
+
+});
