@@ -1,7 +1,7 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-h1{
+.titlePage{
   margin-top: 80px;
   text-align: center;
   font-size: 4em;
@@ -81,6 +81,26 @@ th {
 }
 .newProduct{
   font-size: 2em;
-  margin-bottom: 10.2em;
+  margin-bottom: 20px;
   text-align: center;
+  margin-top: 20px;
+}
+
+.img-product{
+  width: 100%
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.details {
+    text-align: center;
+
 }
