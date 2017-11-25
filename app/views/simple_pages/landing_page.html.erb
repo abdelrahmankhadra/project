@@ -1,2 +1,7 @@
-<h2>Featured Product:</h2>
-<%= @featured_product.name %>
+<h2>
+  <strong>Featured Product:</strong>
+</h2>
+<div align="center">
+  <h3><%= @featured_product.name %></h3>
+  <%= image_tag(@featured_product.image_url) %>
+</div>
