@@ -11,7 +11,7 @@
     <% @products.each do |product| %>
       <div class="item<%= " active" if product == @products.first %>">
         <div align="center">
-          <%= image_tag(product.image_url) %>
+          <%= image_tag(product.image_url, class: "img-responsive") %>
         </div>
         <div class="carousel-caption">
           <%= product.name %>
@@ -35,5 +35,5 @@
 </h2>
 <div align="center">
   <h3><%= @featured_product.name %></h3>
-  <%= image_tag(@featured_product.image_url) %>
+  <%= image_tag(@featured_product.image_url, class: "img-product") %>
 </div>
