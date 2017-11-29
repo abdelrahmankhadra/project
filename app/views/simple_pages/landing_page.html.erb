@@ -40,3 +40,6 @@
   <h3><%= @featured_product.name %></h3>
   <%= image_tag(@featured_product.image_url, class: "img-product") %>
 </div>
+<div align="center">
+  <%= link_to "Show Product", product_path(@featured_product) %>
+</div>
