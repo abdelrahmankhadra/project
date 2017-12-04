@@ -32,9 +32,10 @@
           </div>
           <!--end projectName -->
         </div>
+
         <!--end navbar-header -->
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav nav navbar-nav navbar-right" id="nav">
+          <ul class="nav navbar-nav" id="nav">
             <li>
               <a href="/simple_pages/landing_page">Home</a>
             </li>
@@ -48,32 +49,40 @@
               <a href="/simple_pages/contact">Contact</a>
             </li>
           </ul>
-        </div>
-        <!--end navbar collapse-->
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <%= form_tag(products_path, method: 'get', class: 'navbar-form navbar-right') do%>
+              <%= text_field_tag(:q, "", type: "text", class: "form-control", placeholder: "search text") %>
+              <%= submit_tag("Search", class: "btn btn-primary search-btn") %>
+            <% end %>
+          </li>
+        </ul>
       </div>
-      <!-- end nav container-->
-    </nav>
-    <!-- end navbar-->
+      <!--end navbar collapse-->
+    </div>
+    <!-- end nav container-->
+  </nav>
+  <!-- end navbar-->
 
-    <%= yield %>
+  <%= yield %>
 
-    <!-- ****** F O O T E R ****** -->
-    <footer class="container-fluid bg-4 text-center">
+  <!-- ****** F O O T E R ****** -->
+  <footer class="container-fluid bg-4 text-center">
 
-      <div class="copyright">
-        &copy; 2017 AbdelrahmanKhadra
-      </div>
-      <!-- end copyright -->
+    <div class="copyright">
+      &copy; 2017 AbdelrahmanKhadra
+    </div>
+    <!-- end copyright -->
 
-      <!-- Your follow button code -->
-      <div class="tw-follow">
-        <a class="twitter-follow-button" href="https://twitter.com/AboOdkhadra7" data-size="large" data-show-count="false">
-          Follow @AbdelrahmanKhadra
-        </a>
-      </div>
-      <!-- end tw-follow -->
+    <!-- Your follow button code -->
+    <div class="tw-follow">
+      <a class="twitter-follow-button" href="https://twitter.com/AboOdkhadra7" data-size="large" data-show-count="false">
+        Follow @AbdelrahmanKhadra
+      </a>
+    </div>
+    <!-- end tw-follow -->
 
-    </footer>
-    <!-- end footer bg-4 -->
-  </body>
+  </footer>
+  <!-- end footer bg-4 -->
+</body>
 </html>
