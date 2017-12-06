@@ -1,0 +1,22 @@
+<%= flash[:notice] %>
+
+<%= form_with(url: simple_pages_thank_you_path, local: true) do |form| %>
+<div class="row styleRow">
+  <div class="form-group labelA">
+    <%= form.label :name %>
+    <%= form.text_field :name, placeholder: "Enter Name" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :email, "Email Address" %>
+    <%= form.text_field :email, placeholder: "Enter Email" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :message %>
+    <%= form.text_area :message, placeholder: "Enter Message", rows: 5 %>
+  </div>
+
+  <%= form.submit("Send", class: "btn btn-primary send-btn") %>
+
+</div>
+
+<% end %>

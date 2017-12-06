@@ -57,86 +57,26 @@ body {
   color:white;
   /*Change the color of the text on top so it is readable and adjust the padding as needed.*/
   padding:50px;
-  padding-top:25px;
+  padding-top:50px;
   width:inherit;
   height:auto;
 }
 
-
-.first h1{
-  margin-top:12%;
-	text-transform:uppercase;
-	font-family:'gt_walsheim_medium';
-	font-size:2.5em;
-	line-height:46px;
-	letter-spacing:0.09em;
-	font-weight:900;
-}
-.contact-h1,.contact-h2,.contact-p{
-	color:#1d1d1b;
-	font-family:'Raleway',sans-serif;;
-	font-weight:100;
-	padding:0;
-	margin:0;
-}
-.contactInformation p{
-	width:100%;
-	display:block;
-}
-.contactInformation a{
-	font-size:1em;
-	text-transform:uppercase;
-	font-weight:700;
-	color:#000;
-	text-decoration:none;
-}
-.contactInformation {
-  width:90%;
-  opacity:.85;
-  padding:10px;
-}
-
-.contactInformation a:hover{
-	font-size:1.1em;
-	color:red;
-}
 .form-control{
-  width:80%;
+  width:100%;
 }
 
 
 input[type=text],input[type=tel], input[type=email], select, textarea {
-  width:100%;
+  width:80%;
   padding:12px;
   border:1px solid #ccc;
-  border-radius:4px;
+  border-radius:8px;
   box-sizing:border-box;
   margin-top:6px;
   margin-bottom:16px;
   resize:vertical;
   color:black;
-}
-button[type=submit] {
-  background-color:#000;
-  color:white;
-  padding:12px 20px;
-  border:none;
-  border-radius:10px;
-  cursor:pointer;
-}
-
-button[type=submit]:hover {
-  background-color:#4CAF50;
-}
-
-label{
-  color:black;
-}
-.say{
-  margin-top:6%;
-  font-size:2.5em;
-  color:black;
-  text-transform:uppercase;
 }
 /**** about page ****/
 .Intro p {
@@ -159,4 +99,19 @@ h3 {
 }
 h2{
   margin-top: 100px;
+}
+
+.styleRow{
+  background-color: black;
+	text-align: center;
+  margin: 0.5% auto auto auto;
+  border: 2px;
+  border-radius: 20px;
+  opacity: .9;
+}
+.labelA{
+  margin-top: 20px;
+}
+.send-btn{
+  margin-bottom: 20px;
 }
