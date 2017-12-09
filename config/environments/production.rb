@@ -1,4 +1,15 @@
 Rails.application.configure do
+  config.action_mailer.delivery_method = :smtp
+# SMTP settings for gmail
+config.action_mailer.smtp_settings = {
+ :address              => "smtp.gmail.com",
+ :port                 => 587,
+ :authentication       => "plain",
+ :enable_starttls_auto => true,
+ :user_name            => "aboodkhadra2017@gmail.com",
+ :password             => "P@ss123.321W0rd",
+ domain:'heroku.com'
+}
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -85,6 +96,9 @@ Rails.application.configure do
     logger.formatter = config.log_formatter
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
+
+  # Do not dump schema after migrations.
+  config.active_record.dump_schema_after_migration = false
 
 
 end
