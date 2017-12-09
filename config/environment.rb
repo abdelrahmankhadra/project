@@ -9,7 +9,7 @@ ActionMailer::Base.smtp_settings = {
   port: '587',
   authentication: :plain,
   enable_starttls_auto: true,
-  user_name: 'emanhamdancf@gmail.com',
-  password: '12345678!',
+  user_name: 'abdelrahmankhadra@gmail.com',
+  password: 'A@123456789',
   domain: 'heroku.com'
 }
