@@ -32,9 +32,13 @@
 }
  .search-btn{
    height: 44px;
-   margin-right: 15px;
 
  }
+
+ .Account{
+   margin: 15px 15px;
+ }
+
 
  /**** footer css ****/
  .bg-4 {
@@ -50,3 +54,12 @@
    margin-top:10px;
    margin-bottom:10px;
  }
+/****************/
+.field input {
+    color: #999;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px;
+    border: 2px solid #999;
+    border-radius:2px;
+}
