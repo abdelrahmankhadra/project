@@ -51,6 +51,11 @@
     <%= render 'new_comment' %>
 
     <%= render 'comments' %>
+
+    <div class="pagination">
+      <%= will_paginate @comments %>
+    </div>
+
     <!-- end about -->
   </div>
   <!-- end container -->
