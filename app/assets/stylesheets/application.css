@@ -57,14 +57,10 @@
 /****************/
 .field input {
     color: #999;
-    font-weight: bold;
-    font-size: 24px;
-    padding: 10px;
+    padding: 10px 0px 10px 0px;
     border: 2px solid #999;
     border-radius:2px;
 }
-
-
 /*******************/
 
 
@@ -78,4 +74,38 @@
   border: 1px solid #4575db;
   color: #fff;
   background-color: #5e5757;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+  .field input {
+    width: 60%;
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 980px) and (max-width: 1200px) {
+  .field input {
+    width: 600px;
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .field input {
+    width: 550px;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .field input {
+    width: 400px;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .field input {
+    width: 300px;
+  }
 }
