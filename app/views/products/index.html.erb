@@ -12,13 +12,9 @@
   </div>
 </div>
 
-<%= form_with(url: '/products', local: true) do |form| %>
-Form contents
-<% end %>
-
 <div class="newProduct">
-<a href='<%= new_product_path %>'>
-  <span class="glyphicon glyphicon-plus-sign"></span></a>
+  <a href='<%= new_product_path %>'>
+    <span class="glyphicon glyphicon-plus-sign"></span></a>
 
-<%= link_to 'New Product', new_product_path %>
+  <%= link_to 'New Product', new_product_path %>
 </div>
