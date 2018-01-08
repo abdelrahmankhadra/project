@@ -1,10 +1,11 @@
 require 'rails_helper'
 
-describe User do
+describe User, type: :model do
   context "testing validations" do
 
-    it 'requires email address' do
-      expect(User.new(first_name: "abood", last_name: "abood", email: nil)).not_to be_valid
+    it "should not validate users without an email address" do
+      @user = FactoryBot.build(:user, email: "not_an_email")
+      expect(@user).to_not be_valid
     end
   end
 end
