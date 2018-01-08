@@ -1,8 +1,10 @@
 require 'rails_helper'
 
 describe Comment do
-  let (:product) {Product.create!(name:"race bike",description: "bike bike bike",image_url: "product1.png",colour: "green",price: "27")}
-  let (:user) {User.create!(first_name: "mohammed", last_name:"khadra", email: "mkhadra@gmail.com", password: "123456")}
+  before do
+    @product = FactoryBot.create(:product)
+    @user = FactoryBot.create(:user)
+  end
 
   context "Testing validations" do
 
@@ -21,11 +23,11 @@ describe Comment do
     end
 
     it "is not valid if rating is not integer" do
-      expect(Comment.new(rating: "Hello World", user: user, body: "good product", product: product)).not_to be_valid
+      expect(Comment.new(rating: "Hello World", user: @user, body: "good product", product: @product)).not_to be_valid
     end
 
     it "is a valid comment" do
-      expect(Comment.new(rating: 4, user: user, body: "very nice product", product: product)).to be_valid
+      expect(Comment.new(rating: 4, user: @user, body: "very nice product", product: @product)).to be_valid
     end
 
   end
