@@ -37,20 +37,25 @@
           <div class="rated" data-score="<%= @product.average_rating %>"></div>
         </p>
 
-        <%= link_to 'Edit', edit_product_path(@product) %>
-        |
-        <%= link_to 'Back', products_path %>
-      </div>
+        <%= form_with(url: '/payments/create') do |form| %>
+        <%= render partial: "shared/stripe_checkout_button" %>
+      <% end %>
+      <hr>
+
+      <%= link_to 'Edit', edit_product_path(@product) %>
+      |
+      <%= link_to 'Back', products_path %>
     </div>
-    <%= render 'new_comment' %>
-
-    <%= render 'comments' %>
-
-    <div class="pagination">
-      <%= will_paginate @comments %>
-    </div>
-
-    <!-- end about -->
   </div>
-  <!-- end container -->
+  <%= render 'new_comment' %>
+
+  <%= render 'comments' %>
+
+  <div class="pagination">
+    <%= will_paginate @comments %>
+  </div>
+
+  <!-- end about -->
+</div>
+<!-- end container -->
 </div>

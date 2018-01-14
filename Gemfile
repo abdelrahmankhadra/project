@@ -65,6 +65,8 @@ gem 'will_paginate-bootstrap'
 
 gem 'rails-controller-testing'
 
+gem 'stripe'
+
 group :production do
   gem 'pg'
 end
