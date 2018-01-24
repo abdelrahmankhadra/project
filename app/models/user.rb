@@ -5,4 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
   has_many :orders
   has_many :comments
+
+  def full_name
+    "#{first_name} #{last_name}"
+  end
 end

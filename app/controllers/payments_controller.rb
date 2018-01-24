@@ -1,5 +1,5 @@
 class PaymentsController < ApplicationController
-  before_action :authentication_user!
+  before_action :authenticate_user!
   require "stripe"
 
   def create
@@ -16,8 +16,8 @@ class PaymentsController < ApplicationController
       )
 
       if charge.paid
-        Order.create(product_id: @product_id,user_id: @user_id, total: @product.price)
-        flash[:notice] = "Enjoy riding #{@product.name}"
+        Order.create(product_id: @product.id,user_id: @user.id, total: @product.price)
+        flash[:notice] = "Enjoy #{@product.name}"
         UserMailer.payment_received(@user, @product).deliver_now
       end
     rescue Stripe::CardError => e
