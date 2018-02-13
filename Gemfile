@@ -68,6 +68,8 @@ gem 'rails-controller-testing'
 
 gem 'stripe'
 
+gem 'dalli'
+
 group :production do
   gem 'pg'
 end
