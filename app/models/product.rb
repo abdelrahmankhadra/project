@@ -4,7 +4,7 @@ class Product < ApplicationRecord
   validates :image_url, presence: true
   validates :colour, presence: true
   validates :price, presence: true
-  
+
   has_many :orders
   has_many :comments
   def self.search(search_term)
@@ -22,6 +22,14 @@ class Product < ApplicationRecord
 
   def average_rating
     comments.average(:rating).to_f
+  end
+
+  def views
+    $redis.get("product:#{id}")
+  end
+
+  def viewed!
+    $redis.incr("product:#{id}")
   end
 
 end
