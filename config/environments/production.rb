@@ -89,6 +89,19 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
+  config.action_mailer.delivery_method = :smtp
+
+  ActionMailer::Base.smtp_settings = {
+    address: 'smtp.gmail.com',
+    port: '587',
+    authentication: :plain,
+    enable_starttls_auto: true,
+    user_name: 'abdelrahmankhadra@gmail.com',
+    password: 'A@123456789',
+    domain: 'heroku.com'
+  }
+
+
 
   # Memecachier - Dalli
     config.cache_store = :dalli_store,
