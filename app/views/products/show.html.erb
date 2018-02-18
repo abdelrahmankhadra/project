@@ -4,7 +4,7 @@
   </h1>
 
   <div class="container description" align="center">
-    <div class="row">
+    <div class="row" data-product-id="<%= @product.id %>">
       <% cache @product do %>
         <div class="col-xs-12 col-sm-6 col-md-6">
           <%= image_tag(@product.image_url, class: "img-details product img-zoom", data_zoom_images:@product.image_url) %>
