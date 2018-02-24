@@ -1,0 +1,490 @@
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 4, /home/abdelrahman/program/app/assets/stylesheets/products.scss */
+.titlePage {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 4em;
+}
+
+/* show */
+/* line 11, /home/abdelrahman/program/app/assets/stylesheets/products.scss */
+.description p {
+  text-align: center;
+  width: 100%;
+  display: block;
+  color: black;
+  font-size: 1.2em;
+}
+
+/* line 18, /home/abdelrahman/program/app/assets/stylesheets/products.scss */
+.description a {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 25, /home/abdelrahman/program/app/assets/stylesheets/products.scss */
+.description {
+  width: 90%;
+  text-align: center;
+  margin: auto auto 10% auto;
+  padding: 10px;
+  border: 3px solid #000;
+  border-radius: 20px;
+}
+
+/* line 33, /home/abdelrahman/program/app/assets/stylesheets/products.scss */
+.nameP {
+  margin-top: 120px;
+}
+
+/*index */
+/* line 38, /home/abdelrahman/program/app/assets/stylesheets/products.scss */
+.newProduct {
+  font-size: 2em;
+  margin-bottom: 5em;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* line 45, /home/abdelrahman/program/app/assets/stylesheets/products.scss */
+.img-product {
+  max-width: 100%;
+}
+
+/* line 49, /home/abdelrahman/program/app/assets/stylesheets/products.scss */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+/* line 55, /home/abdelrahman/program/app/assets/stylesheets/products.scss */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* line 59, /home/abdelrahman/program/app/assets/stylesheets/products.scss */
+.details {
+  text-align: center;
+}
+
+/* line 62, /home/abdelrahman/program/app/assets/stylesheets/products.scss */
+.img-details {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* line 70, /home/abdelrahman/program/app/assets/stylesheets/products.scss */
+h1 {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 4em;
+}
+
+/* line 75, /home/abdelrahman/program/app/assets/stylesheets/products.scss */
+.delete_comments {
+  color: black;
+}
+/* line 1, /home/abdelrahman/program/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /home/abdelrahman/program/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /home/abdelrahman/program/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /home/abdelrahman/program/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /home/abdelrahman/program/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /home/abdelrahman/program/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /home/abdelrahman/program/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /home/abdelrahman/program/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, /home/abdelrahman/program/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, /home/abdelrahman/program/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, /home/abdelrahman/program/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 59, /home/abdelrahman/program/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 66, /home/abdelrahman/program/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 76, /home/abdelrahman/program/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 82, /home/abdelrahman/program/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/**** index page ****/
+/* line 7, /home/abdelrahman/program/app/assets/stylesheets/simple_pages.scss */
+.slider {
+  width: 100%;
+}
+
+/* line 10, /home/abdelrahman/program/app/assets/stylesheets/simple_pages.scss */
+.carousel-caption {
+  background-color: black;
+  opacity: 0.7;
+}
+
+/* line 15, /home/abdelrahman/program/app/assets/stylesheets/simple_pages.scss */
+.anchor {
+  padding-top: 50px;
+}
+
+/*** Common properties ****/
+/* line 20, /home/abdelrahman/program/app/assets/stylesheets/simple_pages.scss */
+body {
+  margin: 0;
+  position: relative;
+}
+
+/* line 24, /home/abdelrahman/program/app/assets/stylesheets/simple_pages.scss */
+.header h1 {
+  text-align: center;
+  font-size: 6em;
+  color: #000000;
+}
+
+/* line 29, /home/abdelrahman/program/app/assets/stylesheets/simple_pages.scss */
+.box {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* line 34, /home/abdelrahman/program/app/assets/stylesheets/simple_pages.scss */
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* line 42, /home/abdelrahman/program/app/assets/stylesheets/simple_pages.scss */
+.carousel {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+/* line 46, /home/abdelrahman/program/app/assets/stylesheets/simple_pages.scss */
+.row .images {
+  text-align: center;
+}
+
+/**** contact page ****/
+/* line 51, /home/abdelrahman/program/app/assets/stylesheets/simple_pages.scss */
+#contact {
+  background-image: url("/assets/contactone.jpg");
+  /*Add a background image*/
+  background-attachment: fixed;
+  /*Give the background a fixed position does it not scroll when you scroll*/
+  background-size: cover;
+  /*Have the background cover the entire div section*/
+  color: white;
+  /*Change the color of the text on top so it is readable and adjust the padding as needed.*/
+  padding: 50px;
+  padding-top: 50px;
+  width: inherit;
+  height: auto;
+}
+
+/* line 66, /home/abdelrahman/program/app/assets/stylesheets/simple_pages.scss */
+.form-control {
+  width: 100%;
+}
+
+/* line 71, /home/abdelrahman/program/app/assets/stylesheets/simple_pages.scss */
+input[type=text], input[type=tel], input[type=email], select, textarea {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  color: black;
+}
+
+/**** about page ****/
+/* line 83, /home/abdelrahman/program/app/assets/stylesheets/simple_pages.scss */
+.Intro p {
+  font-family: Futura,Helvetica,Arial,sans-serif;
+  font-size: 1.5em;
+  font-weight: 100;
+  -webkit-margin-before: 0;
+}
+
+/* line 90, /home/abdelrahman/program/app/assets/stylesheets/simple_pages.scss */
+.skills {
+  background-color: #5AD4C2;
+}
+
+/* line 94, /home/abdelrahman/program/app/assets/stylesheets/simple_pages.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 96, /home/abdelrahman/program/app/assets/stylesheets/simple_pages.scss */
+h1,
+h2,
+h3 {
+  font-family: Futura, Helvetica, Arial, sans-serif;
+}
+
+/* line 101, /home/abdelrahman/program/app/assets/stylesheets/simple_pages.scss */
+h2 {
+  margin-top: 100px;
+}
+
+/* line 105, /home/abdelrahman/program/app/assets/stylesheets/simple_pages.scss */
+.styleRow {
+  background-color: black;
+  text-align: center;
+  margin: 0.5% auto auto auto;
+  border: 2px;
+  border-radius: 20px;
+  opacity: .9;
+}
+
+/* line 113, /home/abdelrahman/program/app/assets/stylesheets/simple_pages.scss */
+.labelA {
+  margin-top: 20px;
+}
+
+/* line 116, /home/abdelrahman/program/app/assets/stylesheets/simple_pages.scss */
+.send-btn {
+  margin-bottom: 20px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+ /**** navbar css ****/
+
+ .navbar{
+   z-index:100;
+ }
+ .projectName {
+   text-transform:uppercase;
+ }
+ .projectName a {
+   color:white;
+ }
+ .projectName a img{
+ 	width:30px;
+ 	height:30px;
+ }
+#feild-a{
+  width: 60%;
+  height: 35px;
+  margin-top: -5px;
+}
+ .search-btn{
+   height: 35px;
+   margin-top: -2px;
+ }
+
+ .Account{
+   height: 35px;
+   margin-top: 6px;
+   margin-right: 15px;
+   margin-bottom: 5px;
+ }
+.navbar.navbar-inverse.navbar-fixed-top{
+  max-height: 40px;
+}
+
+ /**** footer css ****/
+ .bg-4 {
+   background-color:#2f2f2f;
+   color:#ffffff;
+   clear: both;
+   position: relative;
+   z-index: 10;
+   height: 6em;
+
+ }
+ .bg-4 .copyright{
+   margin-top:10px;
+   margin-bottom:10px;
+ }
+/****************/
+.field input {
+    color: #999;
+    padding: 10px 0px 10px 0px;
+    border: 2px solid #999;
+    border-radius:2px;
+}
+/*******************/
+
+
+.pagination a {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  border: 1px solid #aaaadd;
+  color: #4575db;
+}
+.pagination a:hover, .pagination a:active {
+  border: 1px solid #4575db;
+  color: #fff;
+  background-color: #5e5757;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+  .field input {
+    width: 60%;
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 980px) and (max-width: 1200px) {
+  .field input {
+    width: 600px;
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .field input {
+    width: 550px;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .field input {
+    width: 400px;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .field input {
+    width: 300px;
+  }
+}
