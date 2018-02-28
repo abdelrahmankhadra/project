@@ -15,6 +15,6 @@ FactoryBot.define do
     password "123456"
     admin true
     first_name "Adminabed"
-    last_name "khadra"
+    last_name "admin"
   end
 end
